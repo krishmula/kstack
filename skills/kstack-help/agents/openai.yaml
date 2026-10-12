@@ -1,0 +1,6 @@
+interface:
+  display_name: "Kstack help"
+  short_description: "Find your way around Kstack"
+
+policy:
+  allow_implicit_invocation: false

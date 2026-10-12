@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kstack"
+  short_description: "Route rigorous engineering work"
+  default_prompt: "Use $kstack to route this task through the matching engineering playbook."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ketchup"
+  short_description: "Catch up on the chat since your last message"
+
+policy:
+  allow_implicit_invocation: false

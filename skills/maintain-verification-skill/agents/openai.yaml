@@ -1,0 +1,6 @@
+interface:
+  display_name: "Maintain Verification Skill"
+  short_description: "Help with Maintain Verification Skill tasks"
+
+policy:
+  allow_implicit_invocation: false

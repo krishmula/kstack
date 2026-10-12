@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle Explain The Number"
+  short_description: "Explain what limits a measured number"
+
+policy:
+  allow_implicit_invocation: false

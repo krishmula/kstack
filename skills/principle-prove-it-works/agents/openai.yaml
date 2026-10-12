@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle Prove It Works"
+  short_description: "Help with Principle Prove It Works tasks"
+
+policy:
+  allow_implicit_invocation: false

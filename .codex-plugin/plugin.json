@@ -1,0 +1,32 @@
+{
+  "name": "kstack",
+  "version": "0.2.0+codex.20261011081112",
+  "description": "Krishna's cross-host port of pstack's rigorous engineering workflows.",
+  "author": {
+    "name": "Krishna"
+  },
+  "license": "MIT",
+  "keywords": [
+    "engineering-workflow",
+    "playbooks",
+    "verification",
+    "code-review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kstack",
+    "shortDescription": "Rigorous engineering playbooks for Codex.",
+    "longDescription": "Routes engineering work through pstack-derived playbooks for investigation, design, implementation, verification, review, and shipping.",
+    "developerName": "Krishna",
+    "category": "Productivity",
+    "capabilities": [
+      "Engineering workflows",
+      "Verification",
+      "Review"
+    ],
+    "defaultPrompt": [
+      "Use $kstack for this engineering task.",
+      "Use $kstack to investigate this before changing code."
+    ]
+  }
+}

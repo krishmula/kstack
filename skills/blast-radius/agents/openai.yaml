@@ -1,0 +1,6 @@
+interface:
+  display_name: "Blast Radius"
+  short_description: "Help with Blast Radius tasks"
+
+policy:
+  allow_implicit_invocation: false

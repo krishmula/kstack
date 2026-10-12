@@ -1,0 +1,6 @@
+interface:
+  display_name: "Principle Model The Domain"
+  short_description: "Help with Principle Model The Domain tasks"
+
+policy:
+  allow_implicit_invocation: false

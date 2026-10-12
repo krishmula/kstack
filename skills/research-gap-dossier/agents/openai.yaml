@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Gap Dossier"
+  short_description: "Find and attack research gaps, then write a dossier"
+
+policy:
+  allow_implicit_invocation: false

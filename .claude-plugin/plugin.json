@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "kstack",
+  "version": "0.2.0",
+  "description": "Krishna's cross-host port of pstack's rigorous engineering workflows.",
+  "author": {
+    "name": "Krishna"
+  }
+}
