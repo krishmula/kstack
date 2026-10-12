@@ -70,6 +70,7 @@ you want one operation:
 | `/recall` | Rebuild the current state from task history. |
 | `/tdd` | Write a cheap local regression test first. |
 | `/bro` | Restate the previous answer in plain language. |
+| `/glossary` | Set up, fill, or prune the `AGENTS.md` glossary that keeps one name per concept. |
 | `/correct` | Make a mistake agents keep repeating structurally impossible. |
 | `/ketchup` | Summarize everything in the chat since your last message. |
 | `/benchmark-checklist` | Vet a performance number before you report it. |

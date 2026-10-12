@@ -1,6 +1,6 @@
 {
   "name": "kstack",
-  "version": "0.2.0+codex.20261011081112",
+  "version": "0.2.0+codex.20261012082835",
   "description": "Krishna's cross-host port of pstack's rigorous engineering workflows.",
   "author": {
     "name": "Krishna"

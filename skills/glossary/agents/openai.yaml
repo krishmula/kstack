@@ -1,0 +1,6 @@
+interface:
+  display_name: "Glossary"
+  short_description: "Set up, fill, and prune AGENTS.md glossaries"
+
+policy:
+  allow_implicit_invocation: false
