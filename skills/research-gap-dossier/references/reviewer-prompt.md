@@ -14,6 +14,11 @@ First, list your tools. If you have no way to search the web and open a page, st
 
 {CONSTRAINTS}
 
+The constraints include the R record, topic, selected lenses, prior findings,
+available compute, and timeline. Keep candidate generation within the selected
+lenses. Search outside that scope when needed to find answering work or a stronger
+baseline. Do not broaden the investigation into another full lens-selection pass.
+
 ## Candidates
 
 {CANDIDATE_CARDS}
@@ -39,3 +44,8 @@ For each candidate, return:
 3. **New sources.** One line per source you opened that is not already listed: title, year, venue, URL, a short verbatim quote, what it proves, and what it does not prove.
 4. **Queries.** The searches you ran.
 5. **What would change your mind.** The evidence or experiment that would defeat your rejection.
+6. **Compute.** Assess the candidate's resource requirements using
+   `references/recording.md` in the research-gap-dossier skill directory. Missing
+   local compute alone is a blocker, not a rejection. Distinguish ideal and
+   lower-resource configurations, preserve the phenomenon being tested, and state
+   estimate uncertainty. Do not mark a test as run or GO based on a resource plan.

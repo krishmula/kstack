@@ -9,7 +9,7 @@ Each attack ends in exactly one outcome.
 - **Survives.** You searched for the thing that would kill it, opened the closest results, and they do not. Cite what you opened.
 - **Kills.** A fetched source or a result shows the attack holds for the whole question.
 - **Narrows.** The attack holds for part of the question. Write the smaller question that remains.
-- **Open.** The evidence does not settle it and a search will not. Name the experiment that would.
+- **Open.** The evidence does not settle it. Name the next action, such as a source fetch, further search, an experiment, or obtaining access. Distinguish missing evidence from experimental uncertainty.
 
 "I found nothing" is Survives only when the search was real. List the queries in the card. A failed fetch is Open, not Survives.
 
@@ -24,15 +24,16 @@ Each attack ends in exactly one outcome.
 | 5. Scale | How the effect changes with concurrency, batch size, multiplexing, and cluster size. Workload studies at realistic scale. | The phenomenon shrinks or vanishes in the regime that matters. |
 | 6. Oracle | The best possible improvement with perfect information or a free mechanism. | The bound is below the margin a reviewer would care about. Label the margin a heuristic unless a standard sets it. |
 | 7. Correctness | Whether the hard part is a consistency, recovery, or ownership problem, or only moving bytes. | Only data movement remains, and existing transports already handle it well. |
-| 8. Feasibility | The hardware, data, and access the decisive experiment needs, against the user's constraints and timeline. | The claim cannot be evaluated with what the user has, and no smaller claim can. |
+| 8. Feasibility | Required compute and data, local screening, ideal and lower-resource configurations, and the access path within the project timeline. | Evidence establishes that evaluation cannot finish within the timeline, beyond current hardware ownership. Missing local compute alone is Open with a resource blocker. |
 | 9. Relevance | Production traces, issues, incident reports, and engineering posts that show the problem in practice. | The problem appears only in a regime no real deployment uses. |
-| 10. Scoop risk | Open RFCs, PRs, roadmaps, and preprints from the last 6-12 months for the relevant projects. | An active project is converging on the same contribution and will likely ship before the thesis ends. |
+| 10. Scoop risk | Open RFCs, PRs, roadmaps, and preprints from the last 6-12 months for the relevant projects. | Scoop risk alone does not kill. Narrow the contribution or record the risk. A fetched source that already answers the question belongs under Novelty. |
 
 ## Decision rules
 
 - **Any Kills ends the candidate**, unless another attack Narrows it. A narrowed candidate is a new card, and it reruns every attack. Old evidence does not carry over unchecked.
 - **Two or more Narrows** usually mean the question was too broad. Rewrite it from the smallest remaining core instead of patching it.
 - **Open on Oracle, Scale, or Simplicity** makes the candidate MEASURE-FIRST at best. Those are the cheapest experiments and the most common reasons a systems thesis dies late.
+- **Missing compute alone is not Kills.** Record resource readiness separately from research status using [recording.md](recording.md). Carry the blocker, ideal configuration, lower-resource alternative, and estimates into the review. Uncertain access stays Open unless evidence establishes infeasibility within the timeline.
 - **Open on Novelty or Adjacent work** is not settled by an experiment. Search more, or lower gap confidence to low.
 - **Scoop risk alone does not kill.** Narrow toward the part the converging project does not cover, and say so in the dossier.
 - **Never resolve an attack from memory.** If you know a relevant paper, find and open it before citing it.

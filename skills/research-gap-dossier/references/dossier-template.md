@@ -5,7 +5,13 @@ Write `dossier.md` with these sections, in this order. Keep each section short. 
 ```markdown
 # <Working title>
 
-<Date> · Status: <GO | MEASURE-FIRST | PIVOT> · Gap confidence: <low | medium | high>
+<Date> · Status: <GO | MEASURE-FIRST | PIVOT | KILL> · Gap confidence: <low | medium | high>
+
+## Record and scope
+
+R identifier, topic identifier and name, selected lens identifiers and names,
+constraints, and relevant prior R and E records. Summarize coverage and its limits.
+Use the project catalog and the fields in `references/recording.md`.
 
 ## Summary
 
@@ -20,7 +26,10 @@ The answer is "no" if <the result that would falsify it>.
 
 ## Background
 
-The facts a reader needs, plain language first. Only what the question depends on.
+Explain the existing mechanism in plain language before the proposed change.
+Describe its trigger, relevant state, sequence, decisions, and correctness conditions.
+Use sources to distinguish established behavior from assumptions and unknowns.
+Identify the exact unresolved question that motivates the candidate.
 
 ## What prior work already answers
 
@@ -60,6 +69,24 @@ conditions fixed before running. Label heuristic thresholds as heuristics.
 Split what runs locally, what needs GPUs or a cluster, and what needs real
 multi-node or network measurement.
 
+Explain how the measurements answer the unresolved question and which conclusions
+they cannot support. This is a plan, not an implemented or executed experiment.
+Link an E identifier and candidate when an experiment record exists.
+
+## Compute requirements
+
+Use the compute fields in `references/recording.md`. Keep resource readiness
+separate from research status. Include the blocker, local screening, ideal compute,
+lower-resource alternative and its limits, runtime estimates, and access path.
+State when no smaller configuration preserves the phenomenon.
+
+## Learning before implementation
+
+List what the user needs to understand about the mechanism, question, and proposed
+measurements to assess the experiment. Point to the relevant sources. Record
+unresolved doubts in learning notes alongside this dossier. Do not turn the
+learning stage into a prerequisite for running this skill.
+
 ## Evaluation plan
 
 Baselines (the strongest public system and the strongest simple baseline),
@@ -68,7 +95,7 @@ the final claim needs.
 
 ## Plan
 
-Milestones across the thesis timeline, with the first kill-test early and a
+Milestones across the user's project timeline, with the first kill-test early and a
 named decision point after each.
 
 ## Risks and threats
@@ -86,3 +113,7 @@ Every cited ledger row: authors if seen on the source, title, venue, year, and U
 Primary sources only. Secondary sources appear only if they were used for discovery,
 and are labeled as such.
 ```
+
+If no candidate survives, replace the survivor-specific sections with the scope,
+coverage limits, rejected candidates and evidence, and the conclusion that no
+experiment is recommended. Do not fill in a hypothetical survivor.

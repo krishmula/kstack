@@ -8,8 +8,8 @@ A candidate that fails any gate is KILL, or PIVOT when a narrower question would
 
 1. **Unanswered.** No fetched source answers the exact surviving question. A source that answers it under a different name counts.
 2. **Falsifiable.** The research question has the step 9 form and names the result that would mean "no."
-3. **Strong baseline exists and is runnable.** The strongest public system or simple baseline is named, and the user can run it or reproduce its numbers.
-4. **Evaluable in time.** The decisive experiment fits the user's hardware, data access, and timeline. For a one-year thesis, the first kill-test finishes within about a month. This is a heuristic.
+3. **Strong baseline is evaluable.** Name the strongest public system or simple baseline and a credible way to run it or reproduce its numbers. Record missing compute separately from baseline quality.
+4. **Evaluable in time.** Name the required resources and a credible path to evaluation within the project timeline. Current local hardware need not suffice. Uncertain hardware access is a blocker, not a failed gate. KILL on feasibility requires evidence that evaluation cannot finish in time beyond current hardware ownership. For a one-year thesis, aim to finish the first kill-test within about a month. This is a heuristic.
 5. **Meaningful upside.** The oracle bound, or the best available estimate of it, clears a margin a reviewer would care about. State the margin and label it a heuristic unless a venue or field standard sets it.
 
 ## Ratings
@@ -28,11 +28,13 @@ Rate each passing candidate low, medium, or high on each axis, with one line of 
 ## Status
 
 - **GO.** Passes every gate on evidence, and its kill-test has run and met the GO condition set before the run.
-- **MEASURE-FIRST.** Passes every gate on paper, but a gate rests on an estimate. The kill-test is designed and its GO / PIVOT / KILL conditions are logged, but it has not run. Most fresh survivors land here.
+- **MEASURE-FIRST.** No gate has failed, but a gate rests on an estimate or required compute access is uncertain. The kill-test is designed and its GO / PIVOT / KILL conditions are logged, but it has not run. Record unresolved resource access separately. Most fresh survivors land here.
 - **PIVOT.** The original question fails a gate, and a narrower or shifted question survives. Write the new question as a new card that reruns both review passes.
 - **KILL.** Fails a gate with no surviving narrower question, or a kill-test met its KILL condition.
 
 An experiment result moves MEASURE-FIRST to GO, PIVOT, or KILL. Log every move in `decisions.tsv` with the experiment as evidence.
+
+Track resource readiness separately using the fields in [recording.md](recording.md). MEASURE-FIRST can be blocked on compute. Never promote a blocked, unrun test to GO. Compare research merit and test priority separately so locally runnable work does not erase stronger candidates that require other hardware.
 
 ## Confidence in the public gap
 
